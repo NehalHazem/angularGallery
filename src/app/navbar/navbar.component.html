@@ -1,0 +1,37 @@
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+
+  <nav class="uk-navbar-container" uk-navbar  style="background: #fff;">
+
+    <a class="uk-navbar-item uk-logo uk-margin-medium-left uk-visible@xl">Image Gallery</a>
+    <a class="uk-navbar-item uk-logo uk-align-center uk-hidden@xl">Image Gallery</a>
+
+    <div class="uk-navbar-right uk-margin-medium-right uk-visible@xl">
+
+      <ul class="uk-navbar-nav" (click)="onClick($event)">
+        <li><a>Nature</a></li>
+        <li><a>Animals</a></li>
+        <li><a>Fashion</a></li>
+        <li><a>Travel</a></li>
+        <li><a>Food & Drink</a></li>
+        <li><a>Arts & Culture</a></li>
+        <li><a>Film</a></li>
+        <li><a>Spirituality</a></li>
+        <li><a>Wallpapers</a></li>
+        <li><a>Textures & Patterns</a></li>
+        <li><a>Architecture</a></li>
+        <li><a uk-icon="chevron-down">More</a>
+          <div class="uk-navbar-dropdown" style="margin-top: 0!important;">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li><a>Business & Work</a></li>
+              <li><a>Experimental</a></li>
+              <li><a>People</a></li>
+              <li><a>Health</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+  </nav>
+</div>

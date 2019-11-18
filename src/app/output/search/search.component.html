@@ -1,0 +1,21 @@
+<div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+ data-src="https://images.unsplash.com/photo-1461994319301-06e2de6207c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" uk-img>
+
+  <div class="uk-container-expand">
+
+    <h3 class="uk-heading-small">Image Gallery</h3>
+    <h4 style="margin-top: 0!important;">Search free high resolution images.</h4>
+
+    <form [formGroup]="form" (ngSubmit)="searchImages()" uk-grid>
+
+      <div class="uk-width-auto@m">
+        <input class="uk-input uk-form-width-large" formControlName="searchValue">
+        <button class="uk-button uk-button-default" type="submit" uk-icon="icon: search" [disabled]=!form.valid></button>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
